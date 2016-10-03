@@ -1,0 +1,3 @@
+SELECT p.*, cct.* FROM tbl_product as p,(SELECT c.*, ct.* FROM tbl_category as c, tbl_category_type as ct WHERE c.category_type_id=ct.category_type_id) as cct WHERE p.category_id=cct.category_id
+
+01936-164510
